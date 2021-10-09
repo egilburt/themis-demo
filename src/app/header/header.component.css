@@ -1,0 +1,53 @@
+.row-style {
+  padding: 2% 0 2% 0;
+  border-bottom: .2em solid #20706B;
+}
+
+.icon-padding {
+  padding-left: 0;
+}
+
+.user-icon {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .icon-padding {
+    padding-right: 0;
+  }
+
+  .user-icon {
+    width: 50%;
+  }
+
+  .row-style {
+    padding: 1% 0 1% 0;
+  }
+
+  .logo-container {
+    padding-left: 2%;
+  }
+
+  .logo {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .row-style {
+    border-bottom: .35em solid #20706B;
+  }
+
+  .icon-padding {
+    padding-right: 1%;
+  }
+
+  .user-icon {
+    float: right;
+    width: 35%;
+  }
+
+  .logo {
+    width: 50%;
+  }
+}

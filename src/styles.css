@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.remove-padding {
+  padding: 0 !important;
+}
+
+.remove-right-padding {
+  padding-right: 0 !important;
+}
+
+.remove-left-padding {
+  padding-left: 0 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}

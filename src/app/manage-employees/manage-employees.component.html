@@ -1,0 +1,84 @@
+<div class="container-fluid">
+  <div class="spacer">
+    <div class="row">
+      <div class="header">
+        Employees
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col remove-left-padding">
+            <button
+              type="button"
+              class="add-employee-button"
+              (click)="openAddDialog()"
+            >
+              <div class="add-employee-message">
+                <img
+                  class="img-fluid plus-image"
+                  src="assets/plus.svg"
+                  alt="plus"
+                >
+                Add
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+    <div
+      class="row"
+      *ngFor="let employee of employees; let index = index; let last = last;"
+    >
+      <div class="col-1"></div>
+      <div
+        class="col-10 box"
+        [ngClass]="{'last-box': last}"
+      >
+        <div class="row">
+          <div class="col-2 align-self-center remove-right-padding">
+            <img
+              class="user-image"
+              src="assets/default-user-image.svg"
+              alt="user"
+            >
+          </div>
+          <div class="col-1 overflow-hidden align-self-center">
+            {{ employee.id }}
+          </div>
+          <div class="col-4 overflow-hidden align-self-center">
+            {{ employee.employee_name }}
+          </div>
+          <div class="col-2 overflow-hidden align-self-center">
+            {{ employee.employee_salary }}
+          </div>
+          <div class="col-1 overflow-hidden align-self-center">
+            {{ employee.employee_age }}
+          </div>
+          <div
+            class="col-1 overflow-hidden align-self-center cursor-pointer"
+            (click)="openEditDialog(employee, index)"
+          >
+            <img
+              src="assets/edit.svg"
+              alt="edit"
+            >
+          </div>
+          <div
+            class="col-1 overflow-hidden align-self-center cursor-pointer"
+            (click)="deleteEmployee(employee.id, index)"
+          >
+            <img
+              src="../../assets/delete.svg"
+              alt="delete"
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+    </div>
+  </div>
+</div>

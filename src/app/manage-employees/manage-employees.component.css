@@ -1,0 +1,58 @@
+.spacer {
+  padding: 8% 0;
+}
+
+.header {
+  font-size: xx-large;
+  font-weight: bolder;
+  color: #20706B;
+  text-align: center;
+}
+
+.add-employee-button {
+  margin-bottom: 1%;
+  font-size: larger;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #68BF98;
+  border: none;
+}
+
+.add-employee-button:hover {
+  opacity: 0.5;
+}
+
+.add-employee-message {
+  line-height: 25px;
+}
+
+.plus-image {
+  padding-bottom: 4%;
+}
+
+.box {
+  border-top: 1px solid #2B4251;
+  border-right: 1px solid #2B4251;
+  border-left: 1px solid #2B4251;
+}
+
+.last-box {
+  border-bottom: 1px solid #2B4251;
+}
+
+.user-image {
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: xxx-large;
+  }
+}
+
+@media (min-width: 1024px) {
+  .spacer {
+    padding: 5% 0;
+  }
+}

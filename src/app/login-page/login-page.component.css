@@ -1,0 +1,158 @@
+.login-content {
+  text-align: center;
+  padding: 10% 0 11% 0;
+}
+
+.login-message {
+  font-size: x-large;
+  color: #20706B;
+}
+
+.login-fields {
+  font-size: smaller;
+  padding: 6% 0;
+}
+
+.login-field {
+  margin-top: 5%;
+  outline-color: #20706B;
+}
+
+.sign-in-button-container {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.sign-in-link {
+  text-decoration: none;
+}
+
+.button-gradient {
+  background-image: linear-gradient(to right, #68BF98 0%, #20706B 51%, #2B4251 100%)
+}
+
+.button-gradient {
+  padding: 4% 20%;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.button-gradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sign-up {
+  margin-top: 8px;
+  padding-top: 6%;
+  font-size: smaller;
+}
+
+.button-gradient:disabled,
+.button-gradient[disabled] {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.button-gradient:disabled:hover,
+.button-gradient[disabled]:hover {
+  background-position: initial;
+}
+
+@media (min-width: 768px) {
+  .login-content {
+    padding: 7% 0 8% 0;
+  }
+
+  .login-message {
+    font-size: 2.25em;
+  }
+
+  .login-fields {
+    padding: 3% 0;
+  }
+
+  .login-field {
+    margin-top: 2%;
+    width: 50%;
+  }
+
+  .sign-up {
+    padding-top: 3%;
+    font-size: 1.2em;
+  }
+
+  .sign-in-button {
+    font-size: 1.25em;
+  }
+
+  .button-gradient {
+    padding: 2% 19%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .login-message {
+    font-size: 2.5em;
+  }
+
+  .login-fields {
+    font-size: medium;
+  }
+
+  .login-field {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .login-message {
+    font-size: 3em;
+  }
+
+  .login-fields {
+    font-size: large;
+  }
+
+  .login-field {
+    width: 40%;
+  }
+
+  .button-gradient {
+    padding: 2% 16.5%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .login-message {
+    font-size: 5em;
+  }
+
+  .login-fields {
+    font-size: xx-large;
+  }
+
+  .login-field {
+    width: 60%;
+  }
+
+  .button-gradient {
+    padding: 3% 24%;
+  }
+
+  .sign-in-button {
+    font-size: 2.5em;
+  }
+
+  .sign-up {
+    font-size: 2em;
+  }
+}

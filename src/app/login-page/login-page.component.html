@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 login-content">
+      <div class="login-message">
+        Sign In
+      </div>
+      <div class="login-fields">
+        <div>
+          <input
+            class="login-field"
+            type="email"
+            placeholder="Email..."
+            [(ngModel)]="email"
+          >
+        </div>
+        <div>
+          <input
+            class="login-field"
+            type="password"
+            placeholder="Password..."
+            [(ngModel)]="password"
+          >
+        </div>
+      </div>
+      <div class="sign-in-button-container">
+        <a
+          class="sign-in-link"
+          routerLink="/manage-employees"
+          routerLinkActive="active"
+        >
+          <button
+            class="sign-in-button button-gradient"
+            [disabled]="shouldDisableButton()"
+          >
+            Sign In
+          </button>
+        </a>
+      </div>
+      <div class="sign-up">
+        <a href="#">
+          Sign Up?
+        </a>
+      </div>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
